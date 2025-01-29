@@ -1,3 +1,4 @@
+
 object Hamming {
   def distance(dnaStrandOne: String, dnaStrandTwo: String): Option[Int] = {
     if(dnaStrandOne.length != dnaStrandTwo.length) None

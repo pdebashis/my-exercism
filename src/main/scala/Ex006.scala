@@ -1,3 +1,4 @@
+
 object Bob {
   def response(statement: String): String = {
     val cleanStatement = statement.replaceAll("\\d", "").strip

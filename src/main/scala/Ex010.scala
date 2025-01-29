@@ -1,3 +1,5 @@
+package com.robot1
+
 object Bearing extends Enumeration {
   val North, South, West, East = Value
 }
@@ -22,7 +24,7 @@ case class Robot(val bearing: Bearing.Value, val coordinates: (Int, Int)) {
     Robot(newBearing, coordinates)
   }
 
-  def advance = bearing match {
+  def advance :Robot = bearing match {
     case Bearing.East => val newCords = (coordinates._1+1,coordinates._2)
       Robot(bearing, newCords)
     case Bearing.West =>  val newCords = (coordinates._1-1,coordinates._2)

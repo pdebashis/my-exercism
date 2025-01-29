@@ -1,3 +1,4 @@
+
 class School {
   type DB = Map[Int, Seq[String]]
 
