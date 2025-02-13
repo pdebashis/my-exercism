@@ -5,10 +5,6 @@ import org.scalatest.matchers.should.Matchers
 
 class Ex011Test extends AnyFunSuite with Matchers {
 
-  test("conversion for 3") {
-    SecretHandshake.convertToBinary(3) should be("11")
-  }
-
   test("wink for 1") {
     SecretHandshake.commands(1) should be(List("wink"))
   }

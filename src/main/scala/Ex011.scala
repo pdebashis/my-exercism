@@ -1,3 +1,5 @@
+package com.secret2
+
 object SecretHandshake {
 
   def convertToBinary(input: Int) : String = {
